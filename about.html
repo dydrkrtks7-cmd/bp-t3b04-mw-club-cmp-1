@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>합정 코인노래방 가격 정보 — 시점과 타이밍이 결정을 바꾼다</title>
+<meta name="description" content="합정 코인노래방 가격 정보를 시점·타이밍 중심으로 분석. 언제 예약하고, 몇 시에 방문해야 유리한지 조건별 선택 기준을 제공합니다.">
+<meta name="keywords" content="합정 코인노래방 가격 정보, 합정 코인노래방, 코인노래방 가격, 합정 노래방, 코인노래방 시간대별 요금">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-night-electric">
+<link rel="canonical" href="https://hapjeong-coin-karaoke-note.roundlog.site/about.html">
+<meta property="og:title" content="합정 코인노래방 가격 정보 — 시점과 타이밍이 결정을 바꾼다">
+<meta property="og:description" content="합정 코인노래방 가격 정보를 시점·타이밍 중심으로 분석. 언제 예약하고, 몇 시에 방문해야 유">
+
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', 'Nanum Gothic', system-ui, sans-serif;
+  background-color: #0a0d14;
+  color: #d9e0ed;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+/* ===== GRID BACKGROUND (Night Transit Map) ===== */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(40, 180, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 180, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -1px -1px;
+  z-index: 0;
+  pointer-events: none;
+}
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #f0f4ff;
+}
+h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 12px rgba(0, 180, 255, 0.3);
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #00b4ff;
+  padding-left: 1rem;
+}
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+p, li, blockquote, .v-top-5870-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #c8d0de;
+}
+.v-top-5870-text {
+  display: inline-block;
+  font-weight: 400;
+  background: rgba(0, 180, 255, 0.08);
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+}
+a {
+  color: #6ac8ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #a0dcff;
+}
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  margin-bottom: 2rem;
+}
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6a7a92;
+}
+/* ===== NAV ===== */
+.nav-present {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+.hamburger-menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #d9e0ed;
+  border-radius: 2px;
+}
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+.nav-links li a {
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+.nav-links li a:hover {
+  background: rgba(255,255,255,0.05);
+}
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #141a24;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+/* ===== CARD ===== */
+.info-card {
+  background: rgba(20, 26, 36, 0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s;
+}
+.info-card:hover {
+  border-color: rgba(0, 180, 255, 0.3);
+}
+.faq-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed rgba(255,255,255,0.06);
+}
+.faq-question {
+  font-weight: 600;
+  color: #e0e8f5;
+  margin-bottom: 0.3rem;
+}
+.faq-answer {
+  padding-left: 0.5rem;
+}
+</style>
+  <meta property="og:url" content="https://hapjeong-coin-karaoke-note.roundlog.site/about.html">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <div>
+        <h1 style="font-size:1.8rem; margin:0; border:none; padding:0;">합정 코인노래방</h1>
+        <span class="v-top-5870-text">가격 정보 · 시점 분석 · 예약 타이밍</span>
+      </div>
+      <nav class="nav-present">
+        <div class="hamburger-menu" onclick="this.parentElement.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">홈</a></li>
+          <li><a href="/price">가격 정보</a></li>
+          <li><a href="/time">시간대별 요금</a></li>
+          <li><a href="/event">이벤트</a></li>
+          <li><a href="/location">위치 안내</a></li>
+          <li><a href="/faq">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>시간대별 요금: 주간·야간·심야 구간 비교</h2>
+    <div class="info-card">
+      <p>합정 코인노래방의 가격은 운영 시간대에 따라 뚜렷한 차등 구조를 보입니다. 주간 시간대(오전 10시~오후 5시)는 평균 코인 가격이 100~150원 수준으로, 동일한 코인 수로 최대 30~40% 더 긴 이용이 가능합니다. 이 시간대는 유동 인구가 적고 시설 여유가 많아 대기 없이 바로 입장할 수 있는 장점이 있습니다. 반면 오후 6시부터 자정까지 이어지는 야간 시간대는 코인 가격이 150~200원으로 상승하며, 피크인 오후 8~10시에는 프리미엄이 붙는 업소도 있습니다.</p>
+      <p>심야 시간대(자정~오전 5시)는 다시 가격이 안정화되는 구간으로, 업소에 따라 1코인 100~130원 수준으로 주간과 유사하거나 약간 높은 가격에 이용할 수 있습니다. 단, 심야 운영 업소의 수가 제한적이므로 사전에 확인이 필요합니다. 주간 대비 야간 요금은 평균 30~50% 높으며, 심야는 주간 대비 10~20% 높은 수준입니다. 요일별로는 금요일과 토요일 야간 시간대에 추가 할증이 적용되는 곳이 많아, 조건을 고려한 방문 시간 선택이 중요합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>인원과 목적에 따른 조건별 선택 기준</h2>
+    <div class="info-card">
+      <p>1인 방문 시에는 주간 또는 심야 시간대가 가장 효율적입니다. 1인이 사용하는 코인 수는 평균 5~10코인이며, 시간대별 가격 차이가 체감 비용에 직접 반영됩니다. 또한 1인 전용 부스가 있는 업소를 선택하면 추가 비용 없이 프라이빗하게 이용할 수 있습니다. 반대로 2인 이상 그룹 방문 시에는 인원 수에 따라 코인 소모 속도가 빠르므로, 무제한 코인 패키지나 시간제 요금제를 운영하는 업소를 우선 고려하는 것이 유리합니다.</p>
+      <p>목적별로도 선택 기준이 달라집니다. 데이트나 특별한 날에는 인테리어와 음질이 좋은 업소를, 친구들과의 모임에서는 넓은 룸과 노래 점수 기능이 있는 업소를 선호하는 경향이 있습니다. 합정 지역은 코인노래방 밀집도가 높아 각 업소마다 특화된 조건을 제시하므로, 사전에 인원과 목적을 명확히 하고 조건에 맞는 업소를 필터링하는 접근이 필요합니다. 예를 들어 2인 데이트라면 주간 할인 시간을 활용해 저렴하게 이용하면서도 조용한 분위기를 누릴 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>예약 타이밍 전략: 피크 회피와 할인 시간 활용</h2>
+    <div class="info-card">
+      <p>합정 코인노래방의 피크 시간대는 평일 오후 7~10시, 주말 오후 6~11시입니다. 이 시간대는 대기 시간이 길어질 뿐만 아니라 코인 가격이 최고 수준에 달합니다. 피크를 회피하기 위한 가장 효과적인 전략은 주간 시간대(오전 11시~오후 4시)를 활용하는 것입니다. 이 시간대는 대부분의 업소가 자체 할인 프로모션을 진행하거나 기본 요금을 낮게 책정합니다. 또한 오픈 시간에 맞춰 방문하면 시설 상태가 가장 좋고 선택권이 넓습니다.</p>
+      <p>할인 시간을 최대한 활용하려면 업소별 정기 할인 요일과 시간대를 사전에 파악하는 것이 중요합니다. 많은 합정 코인노래방이 월·수요일 주간 할인, 또는 첫 방문 고객 대상 추가 코인 증정 이벤트를 진행합니다. 예약 시스템을 운영하는 곳은 온라인 사전 예약 시 추가 할인을 제공하기도 합니다. 따라서 방문 1~2일 전에 업소 공식 채널이나 지도 앱을 통해 실시간 가격과 프로모션 정보를 확인한 뒤 예약하는 것이 비용 효율적인 접근입니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>합정 지역 특성: 유동 인구와 상권이 가격에 미치는 영향</h2>
+    <div class="info-card">
+      <p>합정역 인근은 젊은 유동 인구가 많고 맛집과 카페가 밀집한 상권으로, 주말과 저녁 시간대 방문객이 집중됩니다. 이에 따라 코인노래방 업소 간 거리 경쟁이 치열하며, 일부 업소는 홍대 입력 수요를 흡수하기 위해 가격을 낮추거나 무료 시간을 제공하기도 합니다. 특히 합정역 2번 출구와 3번 출구 인근 골목에 밀집한 업소들은 서로 다른 가격 정책을 취하고 있어, 같은 시간대에도 20% 이상의 가격 차이가 발생합니다.</p>
+      <p>지역 시그널을 고려할 때, 합정 코인노래방의 가격 정보는 단순한 숫자 이상으로 해석되어야 합니다. 상권의 유동 인구 패턴, 주변 행사 일정, 계절적 요인 등이 가격 변동에 영향을 미칩니다. 예를 들어 홍대 축제 기간이나 주말 벼룩시장이 열리는 날에는 합정까지 수요가 확산되어 가격이 일시적으로 상승할 수 있습니다. 따라서 방문 시점의 지역 컨텍스트를 함께 파악하는 것이 합정 코인노래방 가격 정보를 효과적으로 활용하는 핵심입니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>자주 묻는 질문</h2>
+    <div class="info-card">
+      <div class="faq-item">
+        <div class="faq-question">Q: 합정 코인노래방의 평균 코인 가격은 얼마인가요?</div>
+        <div class="faq-answer">A: 주간 기준 100~150원, 야간 기준 150~200원, 심야 기준 100~130원 수준입니다. 업소와 시간대에 따라 차이가 있으므로 방문 전 확인하는 것이 좋습니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: 가장 저렴하게 이용할 수 있는 시간대는 언제인가요?</div>
+        <div class="faq-answer">A: 평일 오전 10시~오후 5시 사이의 주간 시간대가 가장 저렴합니다. 특히 월요일이나 수요일 오전에 방문하면 일부 업소에서 추가 할인을 받을 수 있습니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: 1인 방문 시 유리한 조건이 따로 있나요?</div>
+        <div class="faq-answer">A: 1인 전용 부스를 운영하는 업소를 선택하는 것이 좋습니다. 또한 주간 시간대를 이용하면 5~10코인으로 1~2시간 여유롭게 이용할 수 있어 경제적입니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: 예약 없이 방문해도 괜찮나요?</div>
+        <div class="faq-answer">A: 주간에는 예약 없이도 대부분 입장 가능하지만, 금요일 저녁이나 주말 야간에는 대기가 발생할 수 있습니다. 원하는 시간대가 있다면 온라인 예약을 권장합니다.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 hapjeong-coin-karaoke-note.roundlog.site · 모든 가격 정보는 참고용이며 업소 사정에 따라 변경될 수 있습니다.</p>
+  </div>
+</footer>
+
+<script>
+// 햄버거 메뉴 토글 간단 스크립트
+document.querySelector('.hamburger-menu').addEventListener('click', function(){
+  document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
