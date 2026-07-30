@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hapjeong-coin-karaoke-note.roundlog.site/sitemap.xml
-Sitemap: https://hapjeong-coin-karaoke-note.roundlog.site/sitemap-pages.xml
+Sitemap: https://mangwon-club-review.link-hub.org/sitemap.xml
+Sitemap: https://mangwon-club-review.link-hub.org/sitemap-pages.xml
